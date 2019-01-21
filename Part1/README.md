@@ -4,10 +4,10 @@
 > An atomic operation is in concurrent programming operations that run independent from processes. As example, when the processor perform add or sub operation there are values loaded from or stored to memory. The processor cannot perform another write/read before the atomic operation is finished.
 
 ### What is a semaphore?
-> A semmaphore is a variable used as a conditional to access a certain piece of data. Ex. When A is a semaphore to Q, then if A is true then Q is accessable. Else Q is locked.
+> A semmaphore is a variable used as a conditional to access a certain piece of data. Example: if bool A is a semaphore to Q, then when A is true then Q is accessable. When A is not true then Q is not accessible.
 
 ### What is a mutex?
-> Mutual exclusive means that two or more options cannot be true at the same time. Only one can be true in a given state.
+> Mutual exclusive: Where multiple threads can access a resource (a memory location) a mutex-function makes sure that only one thread is allowed to access the resource at a time.
 
 ### What is the difference between a mutex and a binary semaphore?
 > Binary semaphore: Different processes can wait() and Signal() a semaphore. Mutex: Mutexes have ownership, where a thread in the same scope as another thread can access code of an unlocked mutex, only the thread that locked the mutex should unlock it.
