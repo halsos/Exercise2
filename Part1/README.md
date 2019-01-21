@@ -10,7 +10,7 @@
 > Mutual exclusive: Where multiple threads can access a resource (a memory location) a mutex-function makes sure that only one thread is allowed to access the resource at a time.
 
 ### What is the difference between a mutex and a binary semaphore?
-> Binary semaphore: Different processes can wait() and Signal() a semaphore. Mutex: Mutexes have ownership, where a thread in the same scope as another thread can access code of an unlocked mutex, only the thread that locked the mutex should unlock it.
+> Binary semaphore: Different processes can wait() and Signal() a semaphore. Mutexes give ownership to a thread of a resoure. Only this thread can lock and unlock the resource as long as it has the ownership.
 
 ### What is a critical section?
 > The part of a program that accesses shared resources. Only in a critical section can a process disrupt another process. Race conditions can be avoided by making sure that two processes are not in a critical section at the same time.
